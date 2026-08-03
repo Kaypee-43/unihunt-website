@@ -1,0 +1,13 @@
+<svg width="220" height="48" viewBox="0 0 220 48" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UniHunt">
+  <defs>
+    <linearGradient id="uhg2" x1="8" y1="4" x2="40" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/><stop offset="0.55" stop-color="#6D28D9"/><stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <path d="M24 3.5C15 3.5 7.75 10.75 7.75 19.75C7.75 31 22 43.5 23.2 44.5a1.25 1.25 0 0 0 1.6 0C26 43.5 40.25 31 40.25 19.75C40.25 10.75 33 3.5 24 3.5Z" fill="url(#uhg2)"/>
+  <circle cx="24" cy="19.5" r="9" fill="#FFFFFF"/>
+  <path d="M24 12.5l2.05 4.35 4.7.55-3.5 3.2.95 4.65L24 22.9l-4.2 2.35.95-4.65-3.5-3.2 4.7-.55L24 12.5Z" fill="#6D28D9"/>
+  <text x="52" y="32" font-family="Outfit, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+    <tspan fill="#0F172A">Uni</tspan><tspan fill="#6D28D9">Hunt</tspan>
+  </text>
+</svg>

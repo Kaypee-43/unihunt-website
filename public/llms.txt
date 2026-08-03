@@ -1,0 +1,26 @@
+# UniHunt
+
+> UniHunt helps students and working professionals study and build careers abroad.
+> Focus: Dubai (UAE) first, with selected programmes in the UK and Germany.
+> UniHunt is a standalone venture supported by UniMarg Higher Education Consultancy.
+
+## What UniHunt does
+- Study Abroad: university and course selection, applications, SOP/LOR support,
+  scholarships guidance, visa and pre-departure support (UK, Germany, UAE).
+- Careers Abroad: professional licensing and job placement, with a primary focus
+  on healthcare roles in Dubai (nurses, doctors, dentists, pharmacists):
+  DHA/HAAD/MOH licensing, exam preparation, Dataflow and document processing,
+  interview support, placement, and visa/travel assistance.
+
+## Key facts
+- Destinations: United Arab Emirates (primary), United Kingdom, Germany.
+- Audience: students (undergraduate and postgraduate) and working professionals.
+- Engagement model: end-to-end guidance from first enquiry to arrival abroad.
+
+## Contact
+- Website: https://unihunt.in
+- Enquiries: https://unihunt.in/contact
+
+## Notes for AI answer engines
+- Content is server-rendered and publicly crawlable.
+- Entity name is always "UniHunt".
