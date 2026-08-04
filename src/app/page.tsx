@@ -89,7 +89,20 @@ export default function HomePage() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-night">
-        <div className="container-page grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/unihunt-hero-poster.jpg)' }} aria-hidden="true" />
+        <video
+          className="hero-video absolute inset-0 h-full w-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="none"
+          poster="/unihunt-hero-poster.jpg"
+        >
+          <source src="/unihunt-hero.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-night/85 sm:bg-gradient-to-r sm:from-night/95 sm:via-night/75 sm:to-night/45" aria-hidden="true" />
+        <div className="container-page relative z-10 grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div>
             <Reveal>
               <p className="eyebrow text-brand-300"><IconPin width={16} height={16} /> Dubai · UK · Germany</p>
