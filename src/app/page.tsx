@@ -88,19 +88,19 @@ export default function HomePage() {
       />
 
       {/* HERO */}
-      <section className="mesh relative overflow-hidden">
+      <section className="relative overflow-hidden bg-night">
         <div className="container-page grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
           <div>
             <Reveal>
-              <p className="eyebrow"><IconPin width={16} height={16} /> Dubai · UK · Germany</p>
+              <p className="eyebrow text-brand-300"><IconPin width={16} height={16} /> Dubai · UK · Germany</p>
             </Reveal>
             <Reveal delay={0.05}>
-              <h1 className="mt-4 text-4xl leading-[1.05] sm:text-5xl lg:text-6xl">
-                Find your future <span className="text-gradient">abroad</span>.
+              <h1 className="mt-4 text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+                Find your future <span className="text-gradient-night">abroad</span>.
               </h1>
             </Reveal>
             <Reveal delay={0.1}>
-              <p className="mt-5 max-w-xl text-lg text-body">
+              <p className="mt-5 max-w-xl text-lg text-slate-300">
                 Whether you want to study overseas or build a career abroad, UniHunt guides you
                 end to end, admissions, licensing, placement and visa. One team, all the way to arrival.
               </p>
@@ -108,11 +108,11 @@ export default function HomePage() {
             <Reveal delay={0.15}>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/study-abroad" className="btn-brand">Study abroad <IconArrow width={18} height={18} /></Link>
-                <Link href="/careers-abroad" className="btn-ghost">Careers abroad</Link>
+                <Link href="/careers-abroad" className="btn-ghost !bg-transparent !border-white/25 !text-white hover:!bg-white/10 hover:!border-white/40">Careers abroad</Link>
               </div>
             </Reveal>
             <Reveal delay={0.2}>
-              <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-body">
+              <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-300">
                 {['Free first consultation', 'One dedicated advisor', 'End-to-end support'].map((t) => (
                   <li key={t} className="flex items-center gap-2">
                     <span className="flex h-5 w-5 items-center justify-center rounded-full bg-accent-soft text-accent"><IconCheck width={14} height={14} /></span>
