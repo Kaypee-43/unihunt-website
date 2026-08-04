@@ -31,6 +31,7 @@ const config: Config = {
         line: '#EAE4F7',
         surface: '#FFFFFF',
         canvas: '#FBF9FF',
+        night: { DEFAULT: '#1C1A2E', raised: '#232037', card: '#272341', line: '#3A3556' },
       },
       fontFamily: {
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
