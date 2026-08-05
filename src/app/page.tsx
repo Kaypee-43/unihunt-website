@@ -101,7 +101,7 @@ export default function HomePage() {
         >
           <source src="/unihunt-hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-night/55 sm:bg-gradient-to-r sm:from-night/85 sm:via-night/45 sm:to-transparent" aria-hidden="true" />
+        <div className="absolute inset-0 bg-night/45 sm:bg-gradient-to-r sm:from-night/70 sm:via-night/25 sm:to-transparent" aria-hidden="true" />
         <div className="container-page relative z-10 py-20 lg:py-28">
           <div className="max-w-2xl [text-shadow:0_2px_18px_rgba(10,8,20,0.6)]">
             <Reveal>
