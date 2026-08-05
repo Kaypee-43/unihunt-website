@@ -101,9 +101,9 @@ export default function HomePage() {
         >
           <source src="/unihunt-hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-night/85 sm:bg-gradient-to-r sm:from-night/95 sm:via-night/75 sm:to-night/45" aria-hidden="true" />
-        <div className="container-page relative z-10 grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:py-24">
-          <div>
+        <div className="absolute inset-0 bg-night/30" aria-hidden="true" />
+        <div className="container-page relative z-10 py-20 lg:py-28">
+          <div className="max-w-2xl rounded-3xl border border-white/10 bg-night/55 p-8 shadow-2xl backdrop-blur-md sm:p-10">
             <Reveal>
               <p className="eyebrow text-brand-300"><IconPin width={16} height={16} /> Dubai · UK · Germany</p>
             </Reveal>
@@ -135,14 +135,6 @@ export default function HomePage() {
               </ul>
             </Reveal>
           </div>
-
-          <Reveal delay={0.1}>
-            <div className="rounded-3xl border border-line bg-white/90 p-6 shadow-glow backdrop-blur sm:p-8">
-              <h2 className="text-xl">Get free guidance</h2>
-              <p className="mt-1 text-sm text-muted">Tell us a little, and an advisor will reach out.</p>
-              <div className="mt-5"><LeadForm compact /></div>
-            </div>
-          </Reveal>
         </div>
       </section>
 
