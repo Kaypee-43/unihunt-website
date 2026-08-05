@@ -101,9 +101,9 @@ export default function HomePage() {
         >
           <source src="/unihunt-hero.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-night/30" aria-hidden="true" />
+        <div className="absolute inset-0 bg-night/55 sm:bg-gradient-to-r sm:from-night/85 sm:via-night/45 sm:to-transparent" aria-hidden="true" />
         <div className="container-page relative z-10 py-20 lg:py-28">
-          <div className="max-w-2xl rounded-3xl border border-white/10 bg-night/55 p-8 shadow-2xl backdrop-blur-md sm:p-10">
+          <div className="max-w-2xl [text-shadow:0_2px_18px_rgba(10,8,20,0.6)]">
             <Reveal>
               <p className="eyebrow text-brand-300"><IconPin width={16} height={16} /> Dubai · UK · Germany</p>
             </Reveal>
