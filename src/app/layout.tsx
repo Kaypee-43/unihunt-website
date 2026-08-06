@@ -5,13 +5,12 @@ import { site } from '@/lib/site';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import WhatsAppFloat from '@/components/WhatsAppFloat';
+import ConsentBanner from '@/components/ConsentBanner';
 import Analytics from '@/components/Analytics';
 import JsonLd from '@/components/JsonLd';
 import { organizationSchema, websiteSchema } from '@/lib/schema';
-
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-display', display: 'swap' });
 const inter = Inter({ subsets: ['latin'], variable: '--font-body', display: 'swap' });
-
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -41,7 +40,6 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   icons: { icon: '/favicon.svg', apple: '/favicon.svg' },
 };
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable}`}>
@@ -55,6 +53,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <Footer />
         <WhatsAppFloat />
+        <ConsentBanner />
       </body>
     </html>
   );
