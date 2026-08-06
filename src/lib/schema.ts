@@ -10,7 +10,7 @@ export function organizationSchema() {
     image: `${site.url}/opengraph-image`,
     description: site.description,
     parentOrganization: { '@type': 'Organization', name: site.parent },
-    areaServed: ['United Arab Emirates', 'United Kingdom', 'Germany', 'India'],
+    areaServed: ['United Arab Emirates', 'United Kingdom', 'Germany', 'Australia', 'India'],
     address: {
       '@type': 'PostalAddress',
       streetAddress: `${site.address.line1}, ${site.address.area}`,
@@ -41,7 +41,7 @@ export function serviceSchema(input: { name: string; description: string; path: 
     serviceType: input.serviceType || input.name,
     description: input.description,
     provider: { '@type': 'ProfessionalService', name: site.name, url: site.url },
-    areaServed: ['United Arab Emirates', 'United Kingdom', 'Germany'],
+    areaServed: ['United Arab Emirates', 'United Kingdom', 'Germany', 'Australia'],
     url: `${site.url}${input.path}`,
   };
 }
