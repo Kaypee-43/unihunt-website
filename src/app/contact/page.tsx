@@ -38,7 +38,7 @@ export default function Page() {
             </div>
             <div className="card flex items-start gap-4">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-soft text-accent"><IconChat /></span>
-              <div><h3 className="text-lg">WhatsApp</h3><p className="text-body">Use the WhatsApp button on any page.</p><p className="mt-1 text-xs text-muted">Placeholder number, swap in site config.</p></div>
+              <div><h3 className="text-lg">WhatsApp</h3><p className="text-body">Use the WhatsApp button on any page.</p><p className="mt-1 text-xs text-muted">Chats go straight to an advisor.</p></div>
             </div>
             <div className="card flex items-start gap-4">
               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-50 text-brand-700"><IconPin /></span>
