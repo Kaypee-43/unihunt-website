@@ -13,8 +13,10 @@ export function organizationSchema() {
     areaServed: ['United Arab Emirates', 'United Kingdom', 'Germany', 'India'],
     address: {
       '@type': 'PostalAddress',
+      streetAddress: `${site.address.line1}, ${site.address.area}`,
       addressLocality: site.address.city,
       addressRegion: site.address.region,
+      postalCode: site.address.postalCode,
       addressCountry: site.address.country,
     },
     ...(sameAs.length ? { sameAs } : {}),
