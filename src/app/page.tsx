@@ -53,11 +53,12 @@ const services = [
 
 const steps = [
   { n: '01', title: 'Free consultation', copy: 'We understand your profile, goals and the right destination for you.' },
-  { n: '02', title: 'Your roadmap', copy: 'A personalised plan: course or role, timeline, costs and requirements.' },
-  { n: '03', title: 'Applications & documents', copy: 'We prepare and submit applications, documents and licensing paperwork.' },
-  { n: '04', title: 'Exams & interviews', copy: 'Preparation and support for eligibility exams and interviews.' },
-  { n: '05', title: 'Offer & visa', copy: 'Securing the offer or placement and completing visa formalities.' },
-  { n: '06', title: 'Arrival abroad', copy: 'Pre-departure guidance and support until you land and settle.' },
+  { n: '02', title: 'Eligibility check', copy: 'A fast read on where you qualify today and what your first-choice destination needs.' },
+  { n: '03', title: 'Your roadmap', copy: 'A personalised plan: course or role, timeline, costs and requirements.' },
+  { n: '04', title: 'Applications & documents', copy: 'We prepare and submit applications, documents and licensing paperwork.' },
+  { n: '05', title: 'Exams & interviews', copy: 'Preparation and support for eligibility exams and interviews.' },
+  { n: '06', title: 'Offer & visa', copy: 'Securing the offer or placement and completing visa formalities.' },
+  { n: '07', title: 'Arrival abroad', copy: 'Pre-departure guidance and support until you land and settle.' },
 ];
 
 const faqs = [
@@ -222,7 +223,7 @@ export default function HomePage() {
         <div className="container-page">
           <Reveal>
             <p className="eyebrow text-brand-300">How it works</p>
-            <h2 className="mt-3 text-3xl text-white sm:text-4xl">Your journey in six steps</h2>
+            <h2 className="mt-3 text-3xl text-white sm:text-4xl">Your journey in seven steps</h2>
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {steps.map((s, i) => (
