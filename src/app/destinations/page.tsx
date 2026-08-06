@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 const items = [
   {
     name: 'Dubai, UAE',
+    slug: 'dubai',
     tag: 'Primary destination',
     students: 'International branch campuses and local universities with strong industry links and proximity to home.',
     pros: 'Active hospital recruitment, tax-free income, and high demand for critical care specialties.',
@@ -27,6 +28,7 @@ const items = [
   },
   {
     name: 'Germany',
+    slug: 'germany',
     tag: 'Growing pathway',
     students: 'Public universities with strength in engineering and the sciences, and low or no tuition on many programmes.',
     pros: 'A structural nursing shortage means active government support for international recruitment and a clear path to long-term residency.',
@@ -39,6 +41,7 @@ const items = [
   },
   {
     name: 'United Kingdom',
+    slug: 'uk',
     tag: 'Select programmes',
     students: 'Established universities and globally recognised undergraduate and postgraduate degrees.',
     pros: 'NHS-linked roles with structured post-study work options.',
@@ -46,6 +49,19 @@ const items = [
       'Licensing: NMC and HCPC guidance for healthcare roles',
       'Study: UG and PG programmes at established universities',
       'Route: Post-study work visa options',
+    ],
+  },
+  {
+    name: 'Australia',
+    slug: 'australia',
+    tag: 'Study only',
+    students: 'World-class universities, strong post-study work rights, and clear graduate visa pathways for students.',
+    pros: 'Careers Abroad currently covers Dubai, Germany and the UK. Australia is offered as a study destination.',
+    facts: [
+      'Student visa: Subclass 500',
+      'Post-study work: Temporary Graduate visa, Subclass 485 (2 to 4 years)',
+      'Work while studying: up to 48 hours a fortnight, unlimited during official breaks',
+      'English: IELTS 6.0 overall is the current standard minimum',
     ],
   },
 ];
@@ -83,9 +99,14 @@ export default function Page() {
                   </li>
                 ))}
               </ul>
-              <Link href="/contact" className="mt-6 inline-flex items-center gap-2 font-semibold text-brand-700 transition-all hover:gap-3">
-                Check your eligibility <IconArrow width={18} height={18} />
-              </Link>
+              <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-2">
+                <Link href={`/destinations/${d.slug}`} className="inline-flex items-center gap-2 font-semibold text-brand-700 transition-all hover:gap-3">
+                  Explore {d.name} <IconArrow width={18} height={18} />
+                </Link>
+                <Link href="/contact" className="inline-flex items-center gap-2 font-semibold text-accent transition-all hover:gap-3">
+                  Check your eligibility <IconArrow width={18} height={18} />
+                </Link>
+              </div>
             </div>
           </Reveal>
         ))}
