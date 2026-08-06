@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body', display: 'swa
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: 'UniHunt | Study & Build Careers Abroad, Dubai, UK, Germany',
+    default: 'UniHunt | Study & Build Careers Abroad',
     template: '%s | UniHunt',
   },
   description: site.description,
