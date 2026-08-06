@@ -5,7 +5,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL || 'https://unihunt.in',
   tagline: 'Find your future abroad.',
   description:
-    'UniHunt guides students and professionals to study and build careers abroad, Dubai-first, with select UK and Germany programmes. Admissions, licensing, placement and visa support, end to end.',
+    'UniHunt guides students and professionals to study and build careers abroad, with admissions, licensing, placement and visa support, guided end to end.',
   // TODO: confirm email before go-live.
   email: 'hello@unihunt.in',
   phone: '+91 92271 09543',
