@@ -43,7 +43,8 @@ export default function Footer() {
           <h3 className="text-sm font-semibold text-white">Get in touch</h3>
           <ul className="mt-4 space-y-2 text-sm text-slate-400">
             <li>Email: <a className="hover:text-white" href={`mailto:${site.email}`}>{site.email}</a></li>
-            <li>{site.address.city}, {site.address.region}</li>
+            <li>{site.address.line1}, {site.address.area}</li>
+            <li>{site.address.city}, {site.address.region} {site.address.postalCode}</li>
           </ul>
           <Link href="/contact" className="btn-primary mt-5 text-sm">Start your enquiry</Link>
         </div>
