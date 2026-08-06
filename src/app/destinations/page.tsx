@@ -92,8 +92,8 @@ export default function Page() {
 
         <Reveal>
           <p className="rounded-xl border border-line bg-canvas p-4 text-xs text-muted">
-            The salary figures shown are indicative market ranges drawn from public data as of [MONTH YEAR], not UniHunt placement data.
-            Actual pay depends on employer, specialty, and experience, and market rates change. Verify current figures before relying on them.
+            The salary figures shown are indicative market ranges drawn from recent public market data, not UniHunt placement data.
+            Actual pay depends on employer, specialty, experience, and current market conditions.
           </p>
         </Reveal>
       </section>
