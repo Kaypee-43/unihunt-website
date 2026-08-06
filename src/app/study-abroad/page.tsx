@@ -7,8 +7,8 @@ import { serviceSchema, breadcrumbSchema, faqSchema } from '@/lib/schema';
 import { IconCheck } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: 'Study Abroad, UK, Germany & UAE Admissions Support',
-  description: 'UniHunt guides students through studying abroad: course and university selection, applications, SOP and LOR support, scholarships, visa and pre-departure, for the UK, Germany and UAE.',
+  title: 'Study Abroad, UAE, UK, Germany & Australia',
+  description: 'UniHunt guides students through studying abroad: course and university selection, applications, SOP and LOR support, scholarships, visa and pre-departure, for the UAE, UK, Germany and Australia.',
   alternates: { canonical: '/study-abroad' },
 };
 
@@ -16,6 +16,7 @@ const places = [
   ['United Kingdom', 'Established universities, globally recognised UG and PG degrees, and post-study work visa options.'],
   ['Dubai, UAE', 'International branch campuses and local universities, strong industry links, and proximity to home.'],
   ['Germany', 'Public universities with low or no tuition on many programmes, strength in engineering and the sciences, and English-taught or German-taught options depending on the course.'],
+  ['Australia', 'World-class universities, up to 48 hours a fortnight of work while studying, and 2 to 4 years of post-study work rights on the Temporary Graduate visa.'],
 ];
 
 const offer = [
@@ -28,8 +29,8 @@ const offer = [
 ];
 
 const faqs = [
-  { q: 'Which countries can I study in through UniHunt?', a: 'Dubai, the UK, and Germany, across undergraduate and postgraduate programmes. Your advisor matches destinations to your course, budget and profile.' },
-  { q: 'Do I need IELTS or OET to study abroad?', a: 'It depends on the country and university. UK programmes usually require IELTS. Some Dubai and Germany routes have different requirements. We confirm exactly what your chosen pathway needs.' },
+  { q: 'Which countries can I study in through UniHunt?', a: 'Dubai, the UK, Germany, and Australia, across undergraduate and postgraduate programmes. Your advisor matches destinations to your course, budget and profile.' },
+  { q: 'Do I need IELTS or OET to study abroad?', a: 'It depends on the country and university. UK programmes usually require IELTS. Some Dubai and Germany routes have different requirements, and Australia typically requires IELTS 6.0. We confirm exactly what your chosen pathway needs.' },
   { q: 'Can you help with scholarships?', a: 'Yes. We identify scholarships you are eligible for and support the applications alongside your admission.' },
   { q: 'How long does a study intake usually take?', a: 'A UK study intake typically runs 4 to 6 months from first consultation to visa, depending on the intake calendar and your documentation. This is a range, not a fixed promise.' },
 ];
@@ -43,14 +44,14 @@ export default function Page() {
         faqSchema(faqs),
       ]} />
       <PageHero eyebrow="For students" title="Study abroad, guided end to end"
-        intro="From choosing the right course to landing on campus, one advisor stays with you through shortlisting, applications, scholarships, visa, and pre-departure, for the UK, Germany and UAE." />
+        intro="From choosing the right course to landing on campus, one advisor stays with you through shortlisting, applications, scholarships, visa, and pre-departure, for the UAE, UK, Germany and Australia." />
 
       <section className="container-page py-16">
         <Reveal>
           <p className="eyebrow">Where you can study</p>
-          <h2 className="mt-3 text-2xl sm:text-3xl">Three destinations, matched to your goal</h2>
+          <h2 className="mt-3 text-2xl sm:text-3xl">Destinations matched to your goal</h2>
         </Reveal>
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {places.map(([t, d], i) => (
             <Reveal key={t} delay={i * 0.08}>
               <div className="card h-full">
