@@ -11,9 +11,9 @@ import {
 } from '@/components/Icons';
 
 export const metadata: Metadata = {
-  title: 'UniHunt | Study & Build Careers Abroad, Dubai, UK, Germany',
+  title: 'UniHunt | Study & Build Careers Abroad',
   description:
-    'UniHunt helps students study abroad and professionals build careers abroad. Dubai-first, with select UK and Germany programmes, admissions, licensing, placement and visa support, guided end to end.',
+    'UniHunt helps students study abroad and professionals build careers abroad, with admissions, licensing, placement and visa support, guided end to end.',
   alternates: { canonical: '/' },
 };
 
@@ -30,8 +30,8 @@ const tracks = [
     icon: IconStethoscope,
     tag: 'For professionals',
     title: 'Careers Abroad',
-    copy: 'Licensing and placement for healthcare professionals in Dubai, DHA, HAAD and MOH, exam prep, document processing, interviews and job placement.',
-    points: ['DHA / HAAD / MOH licensing', 'Exam prep & Dataflow support', 'Interview & hospital placement'],
+    copy: 'Licensing and placement for healthcare professionals in Dubai, DHA, DOH and MOH, exam prep, document processing, interviews and job placement.',
+    points: ['DHA / DOH / MOH licensing', 'Exam prep & Dataflow support', 'Interview & hospital placement'],
     href: '/careers-abroad',
   },
 ];
@@ -40,12 +40,13 @@ const destinations = [
   { name: 'Dubai, UAE', role: 'Select programmes', copy: 'Study pathways and high-demand healthcare careers, with strong on-ground support.' },
   { name: 'United Kingdom', role: 'Select programmes', copy: 'Undergraduate and postgraduate routes at leading UK universities.' },
   { name: 'Germany', role: 'Select programmes', copy: 'Quality, affordable higher education for chosen fields of study.' },
+  { name: 'Australia', role: 'Study only', copy: 'World-class universities and strong post-study work rights for students.' },
 ];
 
 const services = [
   { icon: IconChat, title: 'Career counselling', copy: 'A clear roadmap based on your qualification, goals and target country.' },
   { icon: IconDoc, title: 'Applications & documents', copy: 'University applications, SOP, LOR and accurate document processing.' },
-  { icon: IconShield, title: 'Licensing support', copy: 'DHA, HAAD and MOH registration guidance for medical professionals.' },
+  { icon: IconShield, title: 'Licensing support', copy: 'DHA, DOH and MOH registration guidance for medical professionals.' },
   { icon: IconSpark, title: 'Exam preparation', copy: 'Structured preparation for licensing and eligibility examinations.' },
   { icon: IconGlobe, title: 'Visa & travel', copy: 'Visa filing, pre-departure briefing and travel assistance to arrival.' },
   { icon: IconPin, title: 'Placement', copy: 'Connecting professionals with verified opportunities in Dubai.' },
@@ -62,9 +63,9 @@ const steps = [
 ];
 
 const faqs = [
-  { q: 'Which countries does UniHunt help with?', a: 'UniHunt focuses primarily on Dubai in the UAE, and also supports selected programmes in the United Kingdom and Germany. Dubai covers both study pathways and healthcare careers, while the UK and Germany are offered for chosen fields of study.' },
+  { q: 'Which countries does UniHunt help with?', a: 'UniHunt focuses primarily on Dubai in the UAE, and also supports study programmes in the United Kingdom, Germany and Australia. Dubai covers both study pathways and healthcare careers, while the UK, Germany and Australia are offered for chosen fields of study.' },
   { q: 'Does UniHunt help students or working professionals?', a: 'Both. The Study Abroad track guides students through admissions and visas, while the Careers Abroad track helps working professionals, mainly in healthcare, with licensing and job placement in Dubai.' },
-  { q: 'What healthcare roles does UniHunt support for Dubai?', a: 'UniHunt supports nurses, doctors, dentists and pharmacists seeking careers in Dubai, including DHA, HAAD and MOH licensing, examination preparation, document processing, interviews and placement.' },
+  { q: 'What healthcare roles does UniHunt support for Dubai?', a: 'UniHunt supports nurses, doctors, dentists and pharmacists seeking careers in Dubai, including DHA, DOH and MOH licensing, examination preparation, document processing, interviews and placement.' },
   { q: 'Is the first consultation free?', a: 'Yes. Your first consultation and enquiry are free. An advisor reviews your profile and outlines the right path before you commit to anything.' },
   { q: 'Does UniHunt help with the visa process?', a: 'Yes. Visa guidance and pre-departure support are part of both tracks, so your documentation and travel are handled through to arrival.' },
 ];
@@ -83,7 +84,7 @@ export default function HomePage() {
       <JsonLd
         data={[
           serviceSchema({ name: 'Study Abroad Consulting', description: 'University selection, applications, scholarships, visa and pre-departure support for the UK, Germany and UAE.', path: '/study-abroad' }),
-          serviceSchema({ name: 'Overseas Career & Licensing', description: 'Healthcare licensing (DHA/HAAD/MOH), exam preparation, interviews and job placement in Dubai.', path: '/careers-abroad' }),
+          serviceSchema({ name: 'Overseas Career & Licensing', description: 'Healthcare licensing (DHA/DOH/MOH), exam preparation, interviews and job placement in Dubai.', path: '/careers-abroad' }),
           faqSchema(faqs),
         ]}
       />
@@ -106,17 +107,17 @@ export default function HomePage() {
         <div className="container-page relative z-10 py-20 lg:py-28">
           <div className="max-w-2xl [text-shadow:0_2px_18px_rgba(10,8,20,0.6)]">
             <Reveal>
-              <p className="eyebrow text-brand-300"><IconPin width={16} height={16} /> Dubai · UK · Germany</p>
+              <p className="eyebrow text-brand-300"><IconPin width={16} height={16} /> Study & careers abroad</p>
             </Reveal>
             <Reveal delay={0.05}>
               <h1 className="mt-4 text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl">
-                Find your future <span className="text-gradient-night">abroad</span>.
+                Your Path <span className="text-gradient-night">Abroad</span>. One Team, All the Way.
               </h1>
             </Reveal>
             <Reveal delay={0.1}>
               <p className="mt-5 max-w-xl text-lg text-slate-300">
-                Whether you want to study overseas or build a career abroad, UniHunt guides you
-                end to end, admissions, licensing, placement and visa. One team, all the way to arrival.
+                Most consultancies help you study abroad or work abroad, rarely both. UniHunt does both,
+                with the same advisor guiding you through admissions or licensing, paperwork, your visa, and the move itself.
               </p>
             </Reveal>
             <Reveal delay={0.15}>
@@ -177,9 +178,9 @@ export default function HomePage() {
         <div className="container-page">
           <Reveal>
             <p className="eyebrow">Destinations</p>
-            <h2 className="mt-3 text-3xl sm:text-4xl">Dubai-first, with the UK and Germany</h2>
+            <h2 className="mt-3 text-3xl sm:text-4xl">Dubai-first, with select study destinations</h2>
           </Reveal>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {destinations.map((d, i) => (
               <Reveal key={d.name} delay={i * 0.08}>
                 <div className="card card-hover h-full">
