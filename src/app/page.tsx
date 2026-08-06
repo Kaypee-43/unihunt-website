@@ -182,11 +182,8 @@ export default function HomePage() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {destinations.map((d, i) => (
               <Reveal key={d.name} delay={i * 0.08}>
-                <div className={`card card-hover h-full ${d.primary ? 'ring-2 ring-brand-200' : ''}`}>
-                  <div className="flex items-center justify-between">
-                    <IconPin className="text-brand-700" />
-                    {d.primary && <span className="rounded-full bg-brand-700 px-3 py-1 text-xs font-semibold text-white">Primary</span>}
-                  </div>
+                <div className="card card-hover h-full">
+                  <IconPin className="text-brand-700" />
                   <h3 className="mt-4 text-xl">{d.name}</h3>
                   <p className="text-sm font-medium text-accent">{d.role}</p>
                   <p className="mt-3 text-sm text-body">{d.copy}</p>
