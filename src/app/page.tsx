@@ -37,7 +37,7 @@ const tracks = [
 ];
 
 const destinations = [
-  { name: 'Dubai, UAE', role: 'Primary destination', copy: 'Study pathways and high-demand healthcare careers, with strong on-ground support.', primary: true },
+  { name: 'Dubai, UAE', role: 'Select programmes', copy: 'Study pathways and high-demand healthcare careers, with strong on-ground support.' },
   { name: 'United Kingdom', role: 'Select programmes', copy: 'Undergraduate and postgraduate routes at leading UK universities.' },
   { name: 'Germany', role: 'Select programmes', copy: 'Quality, affordable higher education for chosen fields of study.' },
 ];
