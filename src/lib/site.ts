@@ -6,10 +6,10 @@ export const site = {
   tagline: 'Find your future abroad.',
   description:
     'UniHunt guides students and professionals to study and build careers abroad, Dubai-first, with select UK and Germany programmes. Admissions, licensing, placement and visa support, end to end.',
-  // TODO: confirm email and phone before go-live.
+  // TODO: confirm email before go-live.
   email: 'hello@unihunt.in',
-  phonePlaceholder: '+91 00000 00000',
-  whatsappPlaceholder: '910000000000', // digits only, no +, placeholder
+  phone: '+91 92271 09543',
+  whatsapp: '919227109543', // digits only, no +, country code prefixed
   address: {
     line1: '812, Ganesh Glory, Jagatpur Road',
     area: 'Off S.G. Highway',
