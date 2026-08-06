@@ -64,16 +64,6 @@ export default function Page() {
           </div>
         </Reveal>
 
-        <Reveal>
-          <div className="mt-6 rounded-2xl border border-dashed border-brand-300 bg-brand-50/50 p-6">
-            <p className="text-sm font-semibold text-brand-800">Placeholder, replace before launch</p>
-            <p className="mt-2 text-sm text-body">
-              Add the founding team, real credentials, years of experience and any partner or affiliation details here.
-              Named people with visible expertise strengthen trust with families and professionals, and improve how
-              search and AI answer engines assess the brand.
-            </p>
-          </div>
-        </Reveal>
       </section>
     </>
   );
