@@ -1,9 +1,9 @@
 import { site } from '@/lib/site';
 import { IconWhatsApp } from './Icons';
 
-// Placeholder number lives in site.ts (whatsappPlaceholder). Swap it there once confirmed.
+// WhatsApp number lives in site.ts (whatsapp).
 export default function WhatsAppFloat() {
-  const href = `https://wa.me/${site.whatsappPlaceholder}?text=${encodeURIComponent(
+  const href = `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(
     "Hi UniHunt, I'd like to know more about studying/working abroad."
   )}`;
   return (
